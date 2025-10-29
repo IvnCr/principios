@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los 10 Principios del Pacto Mundial</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de la fuente Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo personalizado para la fuente Inter */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilo para las tarjetas de principios */
+        .principle-card {
+            background-color: white;
+            border-radius: 0.75rem; /* 12px */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem; /* 24px */
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border-left-width: 4px; /* Añadido borde izquierdo */
+            /* --- Animación --- */
+            animation: fadeInUp 0.5s ease-out forwards;
+            opacity: 0; /* Inicia invisible */
+            animation-delay: var(--delay, 0s); /* Delay personalizado */
+        }
+        .principle-card:hover {
+            transform: translateY(-8px); /* Elevación más pronunciada */
+            box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.1), 0 6px 8px -4px rgba(0, 0, 0, 0.1);
+        }
+        .area-title {
+            font-size: 1.5rem; /* 24px */
+            font-weight: 700;
+            margin-bottom: 1.5rem; /* 24px */
+            padding-bottom: 0.5rem; /* 8px */
+            border-bottom-width: 2px;
+        }
+        .icon-container {
+            width: 3rem; /* 48px */
+            height: 3rem; /* 48px */
+            border-radius: 0.5rem; /* 8px */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem; /* 16px */
+        }
+        /* --- Keyframes para la animación --- */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-indigo-50 text-gray-800 p-4 md:p-8">
+
+    <div class="max-w-7xl mx-auto">
+        <!-- Título Principal -->
+        <header class="text-center mb-10 md:mb-16 pt-8">
+            <h1 class="text-3xl md:text-5xl font-bold text-indigo-700 mb-3">Los 10 Principios del Pacto Mundial de la ONU</h1>
+            <p class="text-lg md:text-xl text-gray-700">Cómo las empresas pueden construir un futuro sostenible y responsable.</p>
+        </header>
+
+        <main>
+            <!-- SECCIÓN 1: DERECHOS HUMANOS -->
+            <section class="mb-12">
+                <h2 class="area-title text-blue-700 border-blue-300">
+                    Área 1: Derechos Humanos
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Principio 1 -->
+                    <article class="principle-card border-l-blue-500" style="--delay: 0.1s;">
+                        <div class="icon-container bg-blue-100 text-blue-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-round"><path d="M18 21a8 8 0 0 0-12 0"/><circle cx="12" cy="11" r="3"/><path d="M15.89 14.89A5 5 0 0 1 12 18a5 5 0 0 1-3.89-3.11"/><circle cx="6" cy="5" r="3"/><path d="M9.89 7.11A5 5 0 0 1 6 10a5 5 0 0 1-3.89-3.11"/><path d="M16 5a3 3 0 0 1 5.12 2.13A5 5 0 0 1 18 10a5 5 0 0 1-3.89-3.11"/></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-blue-900 mb-2">Principio 1: Apoyar y respetar los derechos humanos</h3>
+                        <p class="text-sm text-gray-600 mb-3"><strong>Explicación:</strong> Las empresas deben asegurarse de que sus operaciones y políticas no infringen los derechos humanos fundamentales.</p>
+                        <p class="text-sm text-gray-700 mt-auto"><strong><span class="text-blue-700">Ejemplo de Implementación:</span></strong> Crear una política de debida diligencia (due diligence) en la cadena de suministro para auditar a los proveedores y garantizar que no utilizan mano de obra esclava o infantil.</p>
+                    </article>
+
+                    <!-- Principio 2 -->
+                    <article class="principle-card border-l-blue-500" style="--delay: 0.2s;">
+                        <div class="icon-container bg-blue-100 text-blue-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-ban"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m4.9 4.9 14.2 14.2"/></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-blue-900 mb-2">Principio 2: No ser cómplice de vulneraciones</h3>
+                        <p class="text-sm text-gray-600 mb-3"><strong>Explicación:</strong> Asegurarse de que la empresa no participa, ni se beneficia indirectamente, en abusos a los derechos humanos cometidos por terceros.</p>
+                        <p class="text-sm text-gray-700 mt-auto"><strong><span class="text-blue-700">Ejemplo de Implementación:</span></strong> Rechazar contratos con socios que tengan un historial conocido de violaciones de DDHH, o establecer cláusulas de rescisión de contrato si se descubren tales prácticas.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 2: NORMAS LABORALES -->
+            <section class="mb-12">
+                <h2 class="area-title text-green-700 border-green-300">
+                    Área 2: Normas Laborales
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Principio 3 -->
+                    <article class="principle-card border-l-green-500" style="--delay: 0.3s;">
+                        <div class="icon-container bg-green-100 text-green-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-megaphone"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-green-900 mb-2">Principio 3: Libertad de asociación y negociación</h3>
+                        <p class="text-sm text-gray-600 mb-3"><strong>Explicación:</strong> Respetar el derecho de los empleados a unirse a sindicatos y a negociar colectivamente sus condiciones laborales.</p>
+                        <p class="text-sm text-gray-700 mt-auto"><strong><span class="text-green-700">Ejemplo de Implementación:</span></strong> Establecer un canal de diálogo abierto y formal con los representantes de los trabajadores (sindicatos o comités de empresa).</p>
+                    </article>
+
+                    <!-- Principio 4 -->
+                    <article class="principle-card border-l-green-500" style="--delay: 0.4s;">
+                        <div class="icon-container bg-green-100 text-green-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock-keyhole"><circle cx="12" cy="16" r="1"/><rect x="3" y="10" width="18" height="12" rx="2"/><path d="M7 10V7a5 5 0 0 1 9.33-2.5"/></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-green-900 mb-2">Principio 4: Eliminación del trabajo forzoso</h3>
+                        <p class="text-sm text-gray-600 mb-3"><strong>Explicación:</strong> Garantizar que ningún empleado trabaja contra su voluntad, bajo amenaza o en condiciones de servidumbre.</p>
+                        <p class="text-sm text-gray-700 mt-auto"><strong><span class="text-green-700">Ejemplo de Implementación:</span></strong> Política de "Cero Retención de Documentos" para trabajadores migrantes y asegurar que todos los contratos sean voluntarios.</p>
+                    </article>
+
+                    <!-- Principio 5 -->
+                    <article class="principle-card border-l-green-500" style="--delay: 0.5s;">
+                        <div class="icon-container bg-green-100 text-green-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-user"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><circle cx="12" cy="8" r="2"/><path d="M15 13a3 3 0 1 0-6 0"/></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-green-900 mb-2">Principio 5: Erradicación del trabajo infantil</h3>
+                        <p class="text-sm text-gray-600 mb-3"><strong>Explicación:</strong> No emplear a personas por debajo de la edad mínima legal establecida para trabajar.</p>
+                        <p class="text-sm text-gray-700 mt-auto"><strong><span class="text-green-700">Ejemplo de Implementación:</span></strong> Proceso de verificación de edad estricto. Si se detecta, no solo despedir, sino financiar la escolarización del niño.</p>
+                    </article>
+
+                    <!-- Principio 6 -->
+                    <article class="principle-card border-l-green-500" style="--delay: 0.6s;">
+                        <div class="icon-container bg-green-100 text-green-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scaling"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M14 15H9v-5"/><path d="M16 3h5v5"/><path d="M21 3 9 15"/></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-green-900 mb-2">Principio 6: Abolición de la discriminación</h3>
+                        <p class="text-sm text-gray-600 mb-3"><strong>Explicación:</strong> Asegurar igualdad de oportunidades y trato en el empleo, sin discriminación por raza, género, religión, etc.</p>
+                        <p class="text-sm text-gray-700 mt-auto"><strong><span class="text-green-700">Ejemplo de Implementación:</span></strong> Realizar auditorías salariales periódicas para cerrar la brecha salarial de género y usar métricas objetivas para ascensos.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 3: MEDIO AMBIENTE -->
+            <section class="mb-12">
+                <h2 class="area-title text-teal-700 border-teal-300">
+                    Área 3: Medio Ambiente
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Principio 7 -->
+                    <article class="principle-card border-l-teal-500" style="--delay: 0.7s;">
+                        <div class="icon-container bg-teal-100 text-teal-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-teal-900 mb-2">Principio 7: Enfoque preventivo ambiental</h3>
+                        <p class="text-sm text-gray-600 mb-3"><strong>Explicación:</strong> (Principio de Precaución) Actuar antes de que ocurra un daño ambiental, incluso si no hay certeza científica absoluta.</p>
+                        <p class="text-sm text-gray-700 mt-auto"><strong><span class="text-teal-700">Ejemplo de Implementación:</span></strong> Sustituir proactivamente un químico por una alternativa biodegradable, aunque el original aún no esté prohibido por ley.</p>
+                    </article>
+
+                    <!-- Principio 8 -->
+                    <article class="principle-card border-l-teal-500" style="--delay: 0.8s;">
+                        <div class="icon-container bg-teal-100 text-teal-700">
+                            <svg xmlns="http://www.w3.org/2D00/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-recycle"><path d="M7 19H4.815a1.83 1.83 0 0 1-1.57-2.914l3.43-5.586a1.83 1.83 0 0 1 3.14 0l3.43 5.586A1.83 1.83 0 0 1 11.185 19H9"/><path d="M16.185 19h2.2a1.83 1.83 0 0 0 1.57-2.914l-3.43-5.586a1.83 1.83 0 0 0-3.14 0l-3.43 5.586A1.83 1.83 0 0 0 11.815 19H14"/><path d="M6 12h12"/><path d="m14.5 7.5 3 2.5-3 2.5"/><path d="M9.5 7.5 6.5 5l-3 2.5"/></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-teal-900 mb-2">Principio 8: Fomentar la responsabilidad ambiental</h3>
+                        <p class="text-sm text-gray-600 mb-3"><strong>Explicación:</strong> Tomar la iniciativa para reducir el impacto ambiental propio, más allá de lo que exige la ley.</p>
+                        <p class="text-sm text-gray-700 mt-auto"><strong><span class="text-teal-700">Ejemplo de Implementación:</span></strong> Establecer objetivos públicos de reducción de emisiones (ej. "Ser neutrales en carbono para 2040") e invertir en optimizar rutas de logística.</p>
+                    </article>
+
+                    <!-- Principio 9 -->
+                    <article class="principle-card border-l-teal-500" style="--delay: 0.9s;">
+                        <div class="icon-container bg-teal-100 text-teal-700">
+                            <svg xmlns="http://www.w3.org/2G00/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-leaf"><path d="M11 20A7 7 0 0 1 4 13q0-4.4 4.02-6.13a.38.38 0 0 1 .53.11l.24.54a.38.38 0 0 1-.06.45c-1.1 1.04-1.74 2.54-1.74 4.03 0 3.87 3.13 7 7 7Z"/><path d="M15.12 11.23a.38.38 0 0 1 .53-.11l.24-.54a.38.38 0 0 1 .06-.45C17 9.09 17.65 7.6 17.65 6.1c0-3.87-3.13-7-7-7A7 7 0 0 0 3.78 6.87a.38.38 0 0 1-.11.53l-.54.24a.38.38 0 0 1-.45-.06C1.6 6.5 1 5.02 1 3.5 1 1.57 2.57 0 4.5 0c2.1 0 3.86 1.76 3.99 4.05"/></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-teal-900 mb-2">Principio 9: Difundir tecnologías ecológicas</h3>
+                        <p class="text-sm text-gray-600 mb-3"><strong>Explicación:</strong> Invertir, desarrollar y utilizar tecnologías que reduzcan el consumo de recursos y prevengan la contaminación.</p>
+                        <p class="text-sm text-gray-700 mt-auto"><strong><span class="text-teal-700">Ejemplo de Implementación:</span></strong> Instalar paneles solares en la fábrica o implementar un sistema de circuito cerrado de agua para reciclar el agua usada.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 4: LUCHA CONTRA LA CORRUPCIÓN -->
+            <section class="mb-12">
+                <h2 class="area-title text-purple-700 border-purple-300">
+                    Área 4: Lucha contra la Corrupción
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"> <!-- lg:grid-cols-4 para centrarlo si solo es 1 -->
+                    <div class="lg:col-start-2 lg:col-span-2"> <!-- Centra la tarjeta en pantallas grandes -->
+                        <!-- Principio 10 -->
+                        <article class="principle-card border-l-purple-500" style="--delay: 1.0s;">
+                            <div class="icon-container bg-purple-100 text-purple-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-landmark"><path d="m3 22 18-9-9-11v11"/><path d="m21 22-9-11v11"/><path d="M3 22h18"/></svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-purple-900 mb-2">Principio 10: Combatir la corrupción</h3>
+                            <p class="text-sm text-gray-600 mb-3"><strong>Explicación:</strong> Trabajar activamente contra la corrupción en todas sus formas, incluyendo el soborno y la extorsión.</p>
+                            <p class="text-sm text-gray-700 mt-auto"><strong><span class="text-purple-700">Ejemplo de Implementación:</span></strong> Implementar un canal de denuncias anónimo (whistleblowing) seguro y crear una política de "Cero Regalos" para el departamento de compras, con formación obligatoria.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
